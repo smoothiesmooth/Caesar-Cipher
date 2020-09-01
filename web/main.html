@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>CVESVR CIPHER</title>
+		<link rel="shortcut icon" href="style/img/favicon.ico">
+		<link rel="stylesheet" href="/style/style.css">
+		<script type="text/javascript" src="/eel.js"></script>
+		<script type="text/javascript">
+			function encode() {
+				text = String(document.getElementById('e_text').value);
+				key = Number(document.getElementById('key').value);
+				document.getElementById('e_text').value = '';
+				eel.crypt(text, key);
+			}
+			function decode() {
+				text = String(document.getElementById('d_text').value);
+				key = Number(document.getElementById('key').value);
+				document.getElementById('d_text').value = '';
+				eel.decrypt(text, key);
+			}
+			eel.expose(display);
+			function display(dest_id, text) {
+				document.getElementById(dest_id).value = text;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="content">
+			<div class="text_i">
+				<input type="text" name="ENCODE" id="e_text" class="input" placeholder="ENCODE">
+				<input type="text" name="DECODE" id="d_text" class="input" placeholder="DECODE"><br>
+				<input type="text" name="KEY" id="key" class="input" placeholder="KEY">
+			</div>
+			<div class="button">
+				<button type="button" name="ENCODE" id="encode" class="code" onclick="encode()">ENCODE</button>
+				<button type="button" name="DECODE" id="decode" class="code" onclick="decode()">DECODE</button>
+			</div>
+		</div>
+	</body>
+</html>

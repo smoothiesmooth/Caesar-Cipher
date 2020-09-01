@@ -1,0 +1,31 @@
+html {
+	background-image: url('img/bg.png');
+}
+
+.input {
+	outline: 0px;
+	border-width: 0px;
+	font-size: 15pt;
+	background-color: #272749;
+	margin-bottom: 5px;
+}
+
+.text_i {
+	 text-align: center;
+}
+
+ .code {
+	outline: 0px;
+	border-width: 0px;
+	background-color: #272749;
+	font-size: 15pt;
+	color: #595965;
+}
+
+.code:active {
+	background-color: #1f1f3b;
+}
+
+.button {
+	text-align: center;
+}
