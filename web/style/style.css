@@ -1,5 +1,8 @@
 html {
+	background-color: #1c1c2f;
 	background-image: url('img/bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .input {
