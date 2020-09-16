@@ -5,3 +5,5 @@
 ## Usage
 
 ### To start application use "python caesar_cipher.py" command
+
+### Made by Gregor Zhilich
